@@ -58,7 +58,7 @@ st.title(
 if "ticker_name_select" not in st.session_state:
     st.session_state.ticker_name_select = None
 # ticker symbol
-with open("SimpleStockPriceApp/stock_names.json", 'r') as file:
+with open("stock_names.json", 'r') as file:
     stock_names_dict = json.load(file)
 ticker_name_list = list(stock_names_dict.keys())
 
